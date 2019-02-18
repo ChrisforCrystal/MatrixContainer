@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
  * @author yunfan.gyf
  **/
 public class HotSwapRunnable implements Runnable {
-    private String className = "com.gyf.hotswap.test.Sweet";
+    private String className = "com.gyf.hotswap.test.Bitter";
     private Class clazz = null;
     private HotSwapClassLoader hcl = null;
 
@@ -18,7 +18,7 @@ public class HotSwapRunnable implements Runnable {
             while (true) {
                 initLoad();
                 Object o = clazz.newInstance();
-                Method sweet = clazz.getMethod("sweet");
+                Method sweet = clazz.getMethod("bitter");
                 sweet.invoke(o);
                 Thread.sleep(3000);
             }
