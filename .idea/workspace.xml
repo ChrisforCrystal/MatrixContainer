@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b638e411-e8ae-4a32-8d68-716b3b1e9d4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/interfacer/HotChangeItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/HotSwapManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Bitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Bitter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/MatrixContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/MatrixContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/Bitter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/Bitter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/HotSwapRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/HotSwapRunnable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/HotSwapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/HotSwapTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/Sweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/Sweet.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,40 +30,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3952">
-              <caret line="164" column="32" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+            <state relative-caret-position="358">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#850#851#0" expanded="true" />
-                <element signature="e#884#885#0" expanded="true" />
                 <element signature="e#941#942#0" expanded="true" />
                 <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#4893#4894#0" expanded="true" />
-                <element signature="e#4957#4958#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/annotation/HotSwap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Bitter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,10 +43,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="286">
               <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="260">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,11 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1274">
+            <state relative-caret-position="644">
               <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -130,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="260">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,10 +100,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/interfacer/HotChangeItem.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/HotSwapManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            <state relative-caret-position="260">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#402#432#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#507#508#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -189,8 +155,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/interfacer/HotChangeItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Bitter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/HotSwapManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java" />
       </list>
     </option>
@@ -277,29 +244,7 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="gyf" type="462c0819:PsiDirectoryNode" />
               <item name="hotswap" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="gyf" type="462c0819:PsiDirectoryNode" />
-              <item name="hotswap" type="462c0819:PsiDirectoryNode" />
               <item name="classloader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="gyf" type="462c0819:PsiDirectoryNode" />
-              <item name="hotswap" type="462c0819:PsiDirectoryNode" />
-              <item name="interfacer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
@@ -378,12 +323,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotSwapTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gyf.hotswap.test.HotSwapTest" />
+    <configuration name="HotSwapManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gyf.hotswap.HotSwapManager" />
       <module name="graduate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gyf.hotswap.test.*" />
+          <option name="PATTERN" value="com.gyf.hotswap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -391,13 +336,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotSwapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gyf.test.HotSwapTest" />
+    <configuration name="HotSwapTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gyf.hotswap.test.HotSwapTest" />
       <module name="graduate" />
-      <option name="VM_PARAMETERS" value="-Dsun.reflect.noInflation=false" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gyf.test.*" />
+          <option name="PATTERN" value="com.gyf.hotswap.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -432,19 +376,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HotSwapTest" />
       <item itemvalue="Application.Sweet" />
       <item itemvalue="Application.HotSwapTest (1)" />
       <item itemvalue="Application.Sweet (1)" />
       <item itemvalue="Application.Bitter" />
+      <item itemvalue="Application.HotSwapManager" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HotSwapTest (1)" />
-        <item itemvalue="Application.Bitter" />
         <item itemvalue="Application.Sweet (1)" />
+        <item itemvalue="Application.HotSwapManager" />
+        <item itemvalue="Application.Bitter" />
         <item itemvalue="Application.Sweet" />
-        <item itemvalue="Application.HotSwapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +416,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26654000" />
+    <option name="totallyTimeSpent" value="28566000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,9 +429,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-228" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.2130621" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.21573876" />
       <window_info id="Structure" order="1" sideWeight="0.50150603" side_tool="true" weight="0.25864553" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -502,11 +445,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" x="26" y="291" width="1388" height="317" id="Terminal" order="10" weight="0.54885656" />
+      <window_info anchor="bottom" x="26" y="291" width="1388" height="317" id="Terminal" order="10" weight="0.44906446" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.32992327" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32848233" />
-      <window_info anchor="bottom" x="263" y="263" width="884" height="409" id="Run" order="14" weight="0.55717254" />
+      <window_info anchor="bottom" x="263" y="263" width="884" height="409" id="Run" order="14" visible="true" weight="0.18399169" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -690,29 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/thread/IsolatedThreadGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3952">
-          <caret line="164" column="32" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#4893#4894#0" expanded="true" />
-            <element signature="e#4957#4958#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/annotation/HotSwap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -733,26 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10894">
@@ -764,16 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/interfacer/HotChangeItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -781,10 +671,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/thread/IsolatedThreadGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/HotSwapManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#402#432#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="53" column="59" selection-start-line="53" selection-start-column="59" selection-end-line="53" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="260">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
