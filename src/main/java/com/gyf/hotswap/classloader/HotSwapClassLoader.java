@@ -1,5 +1,7 @@
 package com.gyf.hotswap.classloader;
 
+import com.gyf.hotswap.annotation.HotSwap;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.MalformedURLException;
@@ -24,6 +26,11 @@ public class HotSwapClassLoader extends URLClassLoader {
     public final static String packagePath = "/";
 
     private static HotSwapClassLoader hcl = new HotSwapClassLoader();
+
+    public HotSwapClassLoader(String scanPath) {
+
+        super(getMyURLs());
+    }
 
     public HotSwapClassLoader() {
         super(getMyURLs());
@@ -50,37 +57,36 @@ public class HotSwapClassLoader extends URLClassLoader {
 
     @Override
     protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
-        System.out.println("load class"+name);
+        System.out.println("load class " + name);
         Class clazz = null;
         clazz = findLoadedClass(name);
-        //如果已经被家在过了
+        //如果已经被加载过了
         if (clazz != null) {
             if (resolve) {
                 //负责完成Class对象的链接
                 resolveClass(clazz);
             }
-            //如果被修改过了，则重新加载
-            if (isModify(name)) {
+            //如果是需要热加载的类并且被修改过了，则重新加载
+            if (isHotSwapClass(clazz) && isModify(name)) {
                 hcl = new HotSwapClassLoader();
                 clazz = customLoad(name, hcl);
             }
             return clazz;
         }
-        // 如果类的包名为 "java." 开始，则有系统默认加载器 AppClassLoader 加载
-        if (name.startsWith("java.")||name.startsWith("sun.")) {
-            try {
-                ClassLoader system = ClassLoader.getSystemClassLoader();
-                clazz = system.loadClass(name);
-                if (clazz != null) {
-                    if (resolve) {
-                        //负责完成Class对象的链接
-                        resolveClass(clazz);
-                    }
+        try {
+            ClassLoader system = ClassLoader.getSystemClassLoader();
+            clazz = system.loadClass(name);
+            if (clazz != null) {
+                if (resolve) {
+                    //负责完成Class对象的链接
+                    resolveClass(clazz);
+                }
+                if (!isHotSwapClass(clazz)) {
                     return clazz;
                 }
-            } catch (ClassNotFoundException e) {
-
             }
+        } catch (ClassNotFoundException e) {
+
         }
 
         //既不是java包也不是已经加载过的，直接加载
@@ -140,7 +146,6 @@ public class HotSwapClassLoader extends URLClassLoader {
     }
 
     /**
-     *
      * @param name 文件名
      * @return 文件是否被修改
      */
@@ -176,5 +181,9 @@ public class HotSwapClassLoader extends URLClassLoader {
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
         return super.findClass(name);
+    }
+
+    private boolean isHotSwapClass(Class aClass) {
+        return aClass.isAnnotationPresent(HotSwap.class);
     }
 }

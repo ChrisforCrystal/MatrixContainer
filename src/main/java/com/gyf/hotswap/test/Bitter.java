@@ -6,11 +6,10 @@ import com.gyf.hotswap.interfacer.HotChangeItem;
 /**
  * @author yunfan.gyf
  **/
-@HotSwap
-public class Sweet implements HotChangeItem {
+public class Bitter implements HotChangeItem {
     @Override
     public void sweet() {
-        System.out.println("I'm sweet version 2, loaded by "+this.getClass().getClassLoader());
+        System.out.println("I'm bitter version 6, loaded by "+this.getClass().getClassLoader());
     }
 
 
