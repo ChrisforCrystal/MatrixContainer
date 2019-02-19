@@ -60,7 +60,7 @@ public class HotSwapClassLoader extends URLClassLoader {
         System.out.println("load class " + name);
         Class clazz = null;
         clazz = findLoadedClass(name);
-        //如果已经被家在过了
+        //如果已经被加载过了
         if (clazz != null) {
             if (resolve) {
                 //负责完成Class对象的链接

@@ -1,14 +1,15 @@
 package com.gyf.hotswap.test;
 
 import com.gyf.hotswap.annotation.HotSwap;
+import com.gyf.hotswap.interfacer.HotChangeItem;
 
 /**
  * @author yunfan.gyf
  **/
-@HotSwap
-public class Bitter {
-    public void bitter() {
-        System.out.println("I'm bitter version 3, loaded by "+this.getClass().getClassLoader());
+public class Bitter implements HotChangeItem {
+    @Override
+    public void sweet() {
+        System.out.println("I'm bitter version 6, loaded by "+this.getClass().getClassLoader());
     }
 
 

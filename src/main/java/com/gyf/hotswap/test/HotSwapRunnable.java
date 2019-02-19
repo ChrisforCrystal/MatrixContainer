@@ -1,15 +1,14 @@
 package com.gyf.hotswap.test;
 
 import com.gyf.hotswap.classloader.HotSwapClassLoader;
-
-import java.lang.reflect.Method;
+import com.gyf.hotswap.interfacer.HotChangeItem;
 
 /**
  * @author yunfan.gyf
  **/
 public class HotSwapRunnable implements Runnable {
-    private String className = "com.gyf.hotswap.test.Bitter";
-    private Class clazz = null;
+    private String className = "com.gyf.hotswap.test.Sweet";
+    private HotChangeItem sweet;
     private HotSwapClassLoader hcl = null;
 
     @Override
@@ -17,9 +16,7 @@ public class HotSwapRunnable implements Runnable {
         try {
             while (true) {
                 initLoad();
-                Object o = clazz.newInstance();
-                Method sweet = clazz.getMethod("bitter");
-                sweet.invoke(o);
+                sweet.sweet();
                 Thread.sleep(3000);
             }
         } catch (Exception e) {
@@ -27,8 +24,14 @@ public class HotSwapRunnable implements Runnable {
         }
     }
 
-    private void initLoad() throws ClassNotFoundException {
+    private void initLoad() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         hcl = HotSwapClassLoader.getClassLoader();
-        clazz = hcl.loadClass(className);
+        sweet = reloadClass(hcl.loadClass(className).newInstance());
     }
+
+    @SuppressWarnings("unchecked")
+    public static <T> T reloadClass(Object o) {
+        return (T) o;
+    }
+
 }
