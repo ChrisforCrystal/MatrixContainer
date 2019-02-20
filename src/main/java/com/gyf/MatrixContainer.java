@@ -42,6 +42,7 @@ public class MatrixContainer {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
 //        while (!thread.isAlive()) {
 //            System.out.println("Thread not start");
 //        }

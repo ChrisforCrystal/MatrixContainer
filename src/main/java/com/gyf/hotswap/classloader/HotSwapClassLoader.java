@@ -1,6 +1,8 @@
 package com.gyf.hotswap.classloader;
 
 import com.gyf.hotswap.annotation.HotSwap;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -14,6 +16,8 @@ import java.util.Map;
  * @author yunfan.gyf
  **/
 public class HotSwapClassLoader extends URLClassLoader {
+
+    private static Logger logger = LoggerFactory.getLogger(HotSwapClassLoader.class);
 
     //class文件的最后加载时间
     public static Map<String, Long> cacheLastModifyTimeMap = new HashMap<>();
@@ -68,6 +72,7 @@ public class HotSwapClassLoader extends URLClassLoader {
             }
             //如果是需要热加载的类并且被修改过了，则重新加载
             if (isHotSwapClass(clazz) && isModify(name)) {
+                logger.info("检测到"+name+"被修改，重新加载");
                 hcl = new HotSwapClassLoader();
                 clazz = customLoad(name, hcl);
             }
