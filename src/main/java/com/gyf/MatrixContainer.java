@@ -27,7 +27,7 @@ public class MatrixContainer {
                 try {
                     System.out.println("线程开始运行");
                     //todo
-                    ContainerClassLoader cl = new ContainerClassLoader("/Users/gaoyunfan/code/graduate/target/classes");
+                    ContainerClassLoader cl = new ContainerClassLoader("/Users/gaoyunfan/code/graduate/target/classes",false);
                     Class<?> clazz = cl.loadClass(className);
                     Method startMethod = clazz.getMethod(method,String[].class);
                     startMethod.invoke(null,(Object)new String[]{});

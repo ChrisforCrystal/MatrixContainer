@@ -30,6 +30,35 @@
       <artifactId>hutool-all</artifactId>
       <version>4.4.3</version>
     </dependency>
+
+
+
+    <!--<dependency>-->
+      <!--<groupId>com.netease</groupId>-->
+      <!--<artifactId>myjarservice-v1</artifactId>-->
+      <!--<scope>provided</scope>-->
+      <!--<version>1.0</version>-->
+    <!--</dependency>-->
+
+
+    <!--<dependency>-->
+      <!--<groupId>com.netease</groupId>-->
+      <!--<artifactId>myjarservice-v2</artifactId>-->
+      <!--<version>1.0</version>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>com.netease</groupId>-->
+      <!--<artifactId>myjarservice-v1</artifactId>-->
+      <!--<version>1.0</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+      <!--<groupId>com.netease</groupId>-->
+      <!--<artifactId>myjarservice-v2</artifactId>-->
+      <!--<scope>provided</scope>-->
+      <!--<version>1.0</version>-->
+    <!--</dependency>-->
+
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
