@@ -47,7 +47,7 @@ public class HotSwapClassLoader extends URLClassLoader {
     /**
      * 将制定路径下的类转换为url
      *
-     * @return URL:file:/Users/gaoyunfan/code/graduate/target/classes/com/gyf/test
+     * @return URL:file:/Users/gaoyunfan/code/graduate/target/classpath/com/gyf/test
      */
     public static URL[] getMyURLs() {
         URL url = null;

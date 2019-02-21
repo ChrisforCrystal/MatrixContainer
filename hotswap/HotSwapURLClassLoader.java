@@ -17,7 +17,7 @@ public class HotSwapURLClassLoader extends URLClassLoader {
     // 缓存加载 class 文件的最后最新修改时间
     public static Map<String, Long> cacheLastModifyTimeMap = new HashMap<String, Long>();
     // 工程 class 类所在的路径
-    public static String projectClassPath = "/Users/gaoyunfan/code/graduate/target/classes";
+    public static String projectClassPath = "/Users/gaoyunfan/code/graduate/target/classpath";
     // 所有的测试的类都在同一个包下
     public static String packagePath = "/";
 

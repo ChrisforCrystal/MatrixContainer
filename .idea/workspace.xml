@@ -2,19 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b638e411-e8ae-4a32-8d68-716b3b1e9d4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bundles/bundle1/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bundles/bundle1/Export.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/simplelogger.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bundles/bundle1/classpath/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bundles/bundle1/classpath/Export.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bundles/bundle2/classes/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/BundleClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/item/Bundle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/item/BundleConf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/UnzipJar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bundles/bundle1/classes/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/bundles/bundle1/classes/C.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotswap/HotSwapURLClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotswap/HotSwapURLClassLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/thread/IsolatedThreadGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/thread/IsolatedThreadGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HotSwapURLClassLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HotSwapURLClassLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bundles/test1/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/bundles/test2/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/MatrixContainer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/MatrixContainer$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/MatrixContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/MatrixContainer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/classloader/HotSwapClassLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/classloader/HotSwapClassLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/HotSwapRunnable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/HotSwapRunnable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/Sweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/Sweet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/hotswap/thread/IsolatedThreadGroup.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,39 +36,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="314">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/classes/com/bundles/test2/B.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="105">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
-                <element signature="e#0#228#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/classes/com/bundles/test1/A.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/BundleClassLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="312">
+              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
               <folding>
-                <element signature="e#0#228#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="182" column="15" selection-start-line="182" selection-start-column="15" selection-end-line="182" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/HotSwapManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -66,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="416">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,71 +111,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="38" />
-              <folding>
-                <element signature="e#731#1290#0" expanded="true" />
-                <element signature="e#1289#1290#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bundles/bundle1/A.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#38#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bundles/bundle1/Export.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
-              <folding>
-                <element signature="e#43#44#0" expanded="true" />
-                <element signature="e#132#133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bundles/bundle1/A.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#264#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bundles/bundle1/Export.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#284#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="135">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#784#1364#0" expanded="true" />
+                <element signature="e#1363#1364#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/thread/IsolatedThreadGroup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/target/classes/bundles/bundle1/classpath/A.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="142" column="11" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -175,7 +177,6 @@
         <option value="$PROJECT_DIR$/hotswap/HotSwapURLClassLoader.java" />
         <option value="$PROJECT_DIR$/hotswap/TestHotSwap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/MitrixContainer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gyf/thread/IsolatedThreadGroup.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/classloader/HotSwapClassLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/test/HotSwapTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/test/HotSwapRunnable.java" />
@@ -184,19 +185,31 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/annotation/HotSwap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/interfacer/RefChange.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/interfacer/HotChangeItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Bitter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/HotSwapManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bundles/test1/A.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bundles/test2/B.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bundles/test1/test1.prop" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java" />
         <option value="$PROJECT_DIR$/bundles/bundle1/A.java" />
         <option value="$PROJECT_DIR$/bundles/bundle1/Export.java" />
+        <option value="$PROJECT_DIR$/bundles/bundle2/classes/B.java" />
+        <option value="$PROJECT_DIR$/bundles/bundle1/classes/Export.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bundles/bundle1/classes/A.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bundles/bundle1/classes/Export.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bundles/bundle2/classes/B.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bundles/bundle2/classes/B.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/thread/IsolatedThreadGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/BundleClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/Test.java" />
+        <option value="$PROJECT_DIR$/bundles/bundle1/classes/A.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java" />
       </list>
     </option>
   </component>
@@ -207,9 +220,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-228" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -219,6 +234,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -240,6 +257,26 @@
             <path>
               <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
               <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle1" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle2" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,6 +318,17 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="gyf" type="462c0819:PsiDirectoryNode" />
               <item name="hotswap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gyf" type="462c0819:PsiDirectoryNode" />
+              <item name="hotswap" type="462c0819:PsiDirectoryNode" />
+              <item name="classloader" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
@@ -298,36 +346,140 @@
               <item name="graduate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gyf" type="462c0819:PsiDirectoryNode" />
+              <item name="isolate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gyf" type="462c0819:PsiDirectoryNode" />
+              <item name="isolate" type="462c0819:PsiDirectoryNode" />
+              <item name="classloader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gyf" type="462c0819:PsiDirectoryNode" />
+              <item name="isolate" type="462c0819:PsiDirectoryNode" />
+              <item name="item" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gyf" type="462c0819:PsiDirectoryNode" />
+              <item name="isolate" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle1" type="462c0819:PsiDirectoryNode" />
+              <item name="classpath" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gyf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/gyf/isolate" />
+      <recent name="$PROJECT_DIR$/src/main/java/com" />
+      <recent name="$PROJECT_DIR$/src/main/java/bundles" />
+      <recent name="$PROJECT_DIR$/src/main/java/bundles/bundle1/classes" />
+      <recent name="$PROJECT_DIR$/target/classes/bundles" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gyf.isolate.classloader" />
+      <recent name="com.gyf.thread" />
       <recent name="com.gyf.hotswap.interfacer" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bundles/bundle1" />
-      <recent name="$PROJECT_DIR$/bundle" />
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/gyf/hotswap" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/gyf" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bundles/bundle1/classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -342,13 +494,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Sweet (1)">
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="A (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A" />
+      <module name="graduate" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bundles.test1.A" />
+      <option name="MAIN_CLASS_NAME" value="com.bundles.bundle1.classes.A" />
       <module name="graduate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bundles.test1.*" />
+          <option name="PATTERN" value="com.bundles.bundle1.classes.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -356,12 +515,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Bitter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gyf.hotswap.test.Bitter" />
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bundles.bundle1.classpath.A" />
       <module name="graduate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gyf.hotswap.test.*" />
+          <option name="PATTERN" value="bundles.bundle1.classpath.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -369,20 +528,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotSwapManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gyf.hotswap.HotSwapManager" />
+    <configuration name="C" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="C" />
       <module name="graduate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gyf.hotswap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotSwapTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="HotSwapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gyf.hotswap.test.HotSwapTest" />
       <module name="graduate" />
       <extension name="coverage">
@@ -395,12 +548,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sweet (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gyf.hotswap.test.Sweet" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gyf.isolate.Test" />
       <module name="graduate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gyf.hotswap.test.*" />
+          <option name="PATTERN" value="com.gyf.isolate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -409,19 +562,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HotSwapTest (1)" />
-      <item itemvalue="Application.Sweet (1)" />
-      <item itemvalue="Application.Bitter" />
-      <item itemvalue="Application.HotSwapManager" />
       <item itemvalue="Application.A" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.A (1)" />
+      <item itemvalue="Application.C" />
+      <item itemvalue="Application.HotSwapTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Sweet (1)" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.HotSwapTest" />
+        <item itemvalue="Application.C" />
+        <item itemvalue="Application.A (1)" />
         <item itemvalue="Application.A" />
-        <item itemvalue="Application.HotSwapTest (1)" />
-        <item itemvalue="Application.HotSwapManager" />
-        <item itemvalue="Application.Bitter" />
       </list>
     </recent_temporary>
   </component>
@@ -445,12 +598,18 @@
       <workItem from="1550458870901" duration="2997000" />
       <workItem from="1550499587203" duration="1999000" />
       <workItem from="1550501675848" duration="18000" />
-      <workItem from="1550632747916" duration="3604000" />
+      <workItem from="1550632747916" duration="6148000" />
+      <workItem from="1550716073679" duration="3016000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="bundles_bundle2_classes_in_graduate - 2019.02.20 at 21h 59m 27s.xml">
+      <configuration name="bundles.bundle2.classes in graduate" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34733000" />
+    <option name="totallyTimeSpent" value="40293000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,28 +621,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="-228" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.22766571" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.21413276" />
       <window_info id="Structure" order="1" sideWeight="0.50150603" side_tool="true" weight="0.25864553" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32992327" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.45322245" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
+      <window_info active="true" anchor="bottom" id="Debug" order="2" visible="true" weight="0.47609147" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32952183" />
       <window_info anchor="bottom" id="Tail" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.53222454" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.5319693" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" x="26" y="291" width="1388" height="317" id="Terminal" order="10" visible="true" weight="0.41815856" />
+      <window_info anchor="bottom" x="26" y="291" width="1388" height="317" id="Terminal" order="10" weight="0.7297297" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.32992327" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32736573" />
-      <window_info anchor="bottom" x="263" y="263" width="884" height="409" id="Run" order="14" weight="0.3375959" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3991684" />
+      <window_info anchor="bottom" x="263" y="263" width="884" height="409" id="Run" order="14" weight="0.3056133" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -545,6 +705,30 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -569,92 +753,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jarencrypt/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="156">
-            <caret line="6" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jarencrypt/ClassLoader/App.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jarencrypt/ClassLoader/App.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jarencrypt/ClassLoader/EncryptClasses.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jarencrypt/ClassLoader/EncryptClasses.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jarencrypt/ClassLoader/MyClassLoader.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/classloader.java" />
-    <entry file="file://$PROJECT_DIR$/jarencrypt/ClassLoader/GenerateKey.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/Hot.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/URLClassPath.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="159" column="43" selection-start-line="159" selection-start-column="39" selection-end-line="159" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Resource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1068">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/IllegalStateException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-          <folding>
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/com/gyf/test/HotSwapTest.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/classloader/HotSwapClassLoader.java" />
-    <entry file="file://$PROJECT_DIR$/hotswap/Hot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/test/HotSwapTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/test/HotSwapRunnable.java" />
-    <entry file="file://$PROJECT_DIR$/target/classes/com/gyf/test/Sweet.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/thread/IsolatedThreadGroup.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/test/Sweet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/CustomCL.java" />
-    <entry file="file://$PROJECT_DIR$/target/classes/com/gyf/hotswap/test/Sweet.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hotswap/TestHotSwap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hotswap/HotSwapURLClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -685,13 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="355" column="23" selection-start-line="355" selection-start-column="23" selection-end-line="355" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/interfacer/RefChange.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -718,13 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/interfacer/HotChangeItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-401">
@@ -739,29 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1820">
-          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#4893#4894#0" expanded="true" />
-            <element signature="e#4957#4958#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/HotSwapManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Bitter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -769,41 +830,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/test2/B.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/test1/test1.prop">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/thread/IsolatedThreadGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/test2/B.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/test1/test1.prop" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/thread/IsolatedThreadGroup.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -822,64 +855,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/com/bundles/test2/B.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/bundles/test2/B.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/test1/A.java" />
+    <entry file="file://$PROJECT_DIR$/bundles/bundle2/classes">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/com/bundles/test1/A.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/test1/A.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="e#731#1290#0" expanded="true" />
-            <element signature="e#1289#1290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/bundle1/A.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/bundle1/Export.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
-          <folding>
-            <element signature="e#43#44#0" expanded="true" />
-            <element signature="e#132#133#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/bundle1/Export.class">
+    <entry file="file://$PROJECT_DIR$/bundles/bundle1/classes/Export.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -888,12 +869,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bundles/bundle1/A.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/com/bundles/test1/A.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/bundles/bundle1/classes.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/bundles/bundle1/classpath/Export.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="52">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/bundle2/classes/B.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/bundle2/classes/B.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/bundle1/classes/A.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/bundle1/classes/Export.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/bundles/bundle2/classes/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bundles/bundle1/classpath/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/item/BundleConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/bundles/bundle2/classes/B.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/Test.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/item/Bundle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/UnzipJar.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/bundle1/classes/A.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/bundle1/classes/Export.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <element signature="e#43#44#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/B.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/C.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/bundle1/classes/C.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#38#39#0" expanded="true" />
+            <element signature="e#129#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/bundles/bundle1/classpath/Export.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bundles/bundle2/classes/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/interfacer/HotChangeItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/HotSwapManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/bundles/bundle1/classpath/A.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/BundleClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="142" column="11" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/thread/IsolatedThreadGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/classloader/HotSwapClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="182" column="15" selection-start-line="182" selection-start-column="15" selection-end-line="182" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#784#1364#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -975,6 +1163,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: cn.hutool:hutool-all:4.4.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

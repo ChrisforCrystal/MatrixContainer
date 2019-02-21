@@ -1,4 +1,4 @@
-package com.gyf.hotswap.thread;
+package com.gyf.thread;
 
 /**
  * @author yunfan.gyf
