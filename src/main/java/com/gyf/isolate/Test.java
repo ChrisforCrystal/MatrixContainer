@@ -15,7 +15,9 @@ public class Test {
         MatrixContainer.start("com.gyf.isolate.Test", "main");
 //        ContainerClassLoader cl = new ContainerClassLoader("/Users/gaoyunfan/code/graduate/target/classes");
 //        Test a = (Test)cl.loadClass("com.gyf.isolate.Test").newInstance();
-        new MyJar1Service().show();
-        new MyJar2Service().show();
+        MyJar1Service myJar1Service = new MyJar1Service();
+        myJar1Service.show();
+        MyJar2Service myJar2Service = new MyJar2Service();
+        myJar2Service.show();
     }
 }

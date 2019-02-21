@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b638e411-e8ae-4a32-8d68-716b3b1e9d4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/myjarservice_v1_1_0_jar_with_dependencies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/myjarservice_v2_1_0_jar_with_dependencies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/service/ClassLoaderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/JarUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/MatrixContainer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/MatrixContainer$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/isolate/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/isolate/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/gyf/isolate/classloader/ContainerClassLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/gyf/isolate/classloader/ContainerClassLoader.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="598">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,14 +32,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/UnzipJar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="-708">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/JarUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="1087" column="33" selection-start-line="1087" selection-start-column="27" selection-end-line="1087" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/target/classes/myjarservice-v2-1.0-jar-with-dependencies.jar!/com/netease/sofaservice/MyJar2Service.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -54,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
+            <state relative-caret-position="1352">
               <caret line="52" column="21" selection-start-line="43" selection-start-column="3" selection-end-line="52" selection-end-column="21" />
             </state>
           </provider>
@@ -72,12 +92,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
+            <state relative-caret-position="624">
               <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#737#1362#0" expanded="true" />
-                <element signature="e#1361#1362#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/netease/myjarservice-v1/1.0/myjarservice-v1-1.0.jar!/com/netease/sofaservice/MyJar1Service.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="312">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -169,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/JarUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java" />
       </list>
     </option>
@@ -181,9 +200,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="797" />
+    <option name="x" value="-228" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -193,7 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,11 +300,32 @@
               <item name="graduate" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="gyf" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,19 +380,6 @@
       </method>
     </configuration>
     <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bundles.bundle1.classes.A" />
-      <module name="graduate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bundles.bundle1.classes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bundles.bundle1.classpath.A" />
       <module name="graduate" />
       <extension name="coverage">
@@ -384,6 +412,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JarUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gyf.isolate.util.JarUtil" />
+      <module name="graduate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gyf.isolate.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gyf.isolate.Test" />
       <module name="graduate" />
@@ -398,19 +439,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.A" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.A (1)" />
       <item itemvalue="Application.C" />
       <item itemvalue="Application.HotSwapTest" />
+      <item itemvalue="Application.JarUtil" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.JarUtil" />
         <item itemvalue="Application.HotSwapTest" />
         <item itemvalue="Application.C" />
         <item itemvalue="Application.A (1)" />
-        <item itemvalue="Application.A" />
       </list>
     </recent_temporary>
   </component>
@@ -438,6 +479,8 @@
       <workItem from="1550716073679" duration="4649000" />
       <workItem from="1550721319430" duration="2277000" />
       <workItem from="1550734368129" duration="1761000" />
+      <workItem from="1550738214645" duration="83000" />
+      <workItem from="1550746293713" duration="1160000" />
     </task>
     <servers />
   </component>
@@ -447,7 +490,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45964000" />
+    <option name="totallyTimeSpent" value="47207000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,7 +505,7 @@
     <frame x="-228" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.21948609" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49849397" visible="true" weight="0.22644539" />
       <window_info id="Structure" order="1" sideWeight="0.50150603" side_tool="true" weight="0.25864553" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -475,13 +518,13 @@
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32952183" />
       <window_info anchor="bottom" id="Tail" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.53118503" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.53069055" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" x="26" y="291" width="1388" height="317" id="Terminal" order="10" weight="0.7297297" />
+      <window_info anchor="bottom" x="26" y="291" width="1388" height="317" id="Terminal" order="10" weight="0.72890025" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.32992327" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3991684" />
-      <window_info anchor="bottom" x="263" y="263" width="884" height="409" id="Run" order="14" weight="0.33887735" />
+      <window_info anchor="bottom" x="263" y="263" width="884" height="409" id="Run" order="14" weight="0.495842" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -573,28 +616,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/HotSwapRunnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/hotswap/test/Sweet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/com/bundles/test2/B.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bundles/test1/A.java" />
     <entry file="file://$PROJECT_DIR$/bundles/bundle2/classes">
@@ -648,9 +669,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/UnzipJar.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/bundles/bundle1/classes/A.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -777,65 +795,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Desktop/myjarservice-v2-1.0-jar-with-dependencies.jar!/com/gyf/myjar/MyDemo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Desktop/myjarservice-v2-1.0-jar-with-dependencies.jar!/com/netease/sofaservice/MyJar2Service.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Desktop/myjarservice-v1-1.0-jar-with-dependencies.jar!/com/gyf/myjar/MyDemo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Desktop/myjarservice-v1-1.0-jar-with-dependencies.jar!/com/netease/sofaservice/MyJar1Service.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/Desktop/myjarservice-v2-1.0-jar-with-dependencies.jar!/com/gyf/myjar/MyDemo.class" />
+    <entry file="jar://$USER_HOME$/Desktop/myjarservice-v2-1.0-jar-with-dependencies.jar!/com/netease/sofaservice/MyJar2Service.class" />
+    <entry file="jar://$USER_HOME$/Desktop/myjarservice-v1-1.0-jar-with-dependencies.jar!/com/gyf/myjar/MyDemo.class" />
+    <entry file="jar://$USER_HOME$/Desktop/myjarservice-v1-1.0-jar-with-dependencies.jar!/com/netease/sofaservice/MyJar1Service.class" />
     <entry file="jar://$PROJECT_DIR$/target/classes/myjarservice-v2-1.0-jar-with-dependencies.jar!/com/gyf/myjar/MyDemo.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4654">
-          <caret line="210" column="54" selection-start-line="210" selection-start-column="40" selection-end-line="210" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/target/classes/myjarservice-v2-1.0-jar-with-dependencies.jar!/com/netease/sofaservice/MyJar2Service.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/BundleClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,36 +820,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netease/myjarservice-v1/1.0/myjarservice-v1-1.0.jar!/com/netease/sofaservice/MyJar1Service.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="208">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#737#1362#0" expanded="true" />
-            <element signature="e#1361#1362#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="1352">
           <caret line="52" column="21" selection-start-line="43" selection-start-column="3" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/ContainerClassLoader.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="4654">
+          <caret line="210" column="54" selection-start-line="210" selection-start-column="40" selection-end-line="210" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/MatrixContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/classloader/BundleClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netease/myjarservice-v1/1.0/myjarservice-v1-1.0.jar!/com/netease/sofaservice/MyJar1Service.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/target/classes/myjarservice-v2-1.0-jar-with-dependencies.jar!/com/netease/sofaservice/MyJar2Service.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/UnzipJar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-708">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="1087" column="33" selection-start-line="1087" selection-start-column="27" selection-end-line="1087" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/util/JarUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -891,8 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/gyf/isolate/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="598">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
