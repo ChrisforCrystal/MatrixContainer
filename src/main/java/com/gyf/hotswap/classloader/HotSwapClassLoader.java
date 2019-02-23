@@ -1,8 +1,7 @@
 package com.gyf.hotswap.classloader;
 
 import com.gyf.hotswap.annotation.HotSwap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,7 +16,7 @@ import java.util.Map;
  **/
 public class HotSwapClassLoader extends URLClassLoader {
 
-    private static Logger logger = LoggerFactory.getLogger(HotSwapClassLoader.class);
+    private static Logger logger = Logger.getLogger(HotSwapClassLoader.class);
 
     //class文件的最后加载时间
     public static Map<String, Long> cacheLastModifyTimeMap = new HashMap<>();

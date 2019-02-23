@@ -7,8 +7,8 @@ import java.net.URLClassLoader;
  * @author yunfan.gyf
  **/
 public class BundleClassLoader extends URLClassLoader {
-    public BundleClassLoader(String classpath) {
-        super(getClassPath(classpath));
+    public BundleClassLoader(String name, URL[] urls) {
+        super(urls);
     }
 
     private static URL[] getClassPath(String classpath) {
