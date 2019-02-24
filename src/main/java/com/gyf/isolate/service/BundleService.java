@@ -17,7 +17,7 @@ public class BundleService {
     private static BundleService bundleService;
 
 
-    public static Bundle createBundle(File file) throws IOException {
+    public Bundle createBundle(File file) throws IOException {
         JarFile jarFile = new JarFile(file);
         Bundle bundle = new Bundle();
         bundle.setBundleName(file.getName())
