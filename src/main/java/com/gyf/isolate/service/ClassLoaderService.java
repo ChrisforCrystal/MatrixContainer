@@ -3,7 +3,8 @@ package com.gyf.isolate.service;
 import com.google.common.collect.Lists;
 import com.gyf.isolate.item.Bundle;
 import com.gyf.isolate.util.JarUtil;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.net.URL;
@@ -16,7 +17,7 @@ import java.util.concurrent.ConcurrentHashMap;
  **/
 public class ClassLoaderService {
 
-    private static Logger logger = Logger.getLogger(ClassLoaderService.class);
+    private static Logger logger = LoggerFactory.getLogger(ClassLoaderService.class);
     /**
      * 每个bundle共享出来隔离的类及其类加载器
      */
@@ -34,10 +35,9 @@ public class ClassLoaderService {
 
     private ClassLoaderService() {
         bundleService = BundleService.getInstance();
-        init();
     }
 
-    private void init() {
+    public void init() {
         prepareJdkClassloader();
         createBundleFromClassPath(((URLClassLoader) systemClassloader).getURLs());
     }

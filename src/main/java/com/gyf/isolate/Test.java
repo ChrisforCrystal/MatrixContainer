@@ -3,20 +3,19 @@ package com.gyf.isolate;
 import com.gyf.MatrixContainer;
 import com.netease.sofaservice.MyJar1Service;
 import com.netease.sofaservice.MyJar2Service;
-import org.apache.log4j.Logger;
-import org.apache.log4j.spi.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.net.MalformedURLException;
 
 /**
  * @author yunfan.gyf
  **/
 public class Test {
 
-    private static Logger logger = Logger.getLogger(Test.class);
+    private static Logger logger = LoggerFactory.getLogger(Test.class);
 
-    public static void main(String[] args) throws MalformedURLException, ClassNotFoundException, IllegalAccessException, InstantiationException, InterruptedException {
-//        MatrixContainer.start("com.gyf.isolate.Test", "main");
+    public static void main(String[] args)  {
+        MatrixContainer.start(Test.class, "main");
         MyJar1Service myJar1Service = new MyJar1Service();
         myJar1Service.show();
         MyJar2Service myJar2Service = new MyJar2Service();

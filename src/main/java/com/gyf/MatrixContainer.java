@@ -3,6 +3,7 @@ package com.gyf;
 
 import com.gyf.hotswap.annotation.HotSwap;
 import com.gyf.isolate.classloader.ContainerClassLoader;
+import com.gyf.isolate.service.ClassLoaderService;
 import com.gyf.thread.IsolatedThreadGroup;
 
 import java.io.File;
@@ -16,11 +17,13 @@ import java.net.URLClassLoader;
 public class MatrixContainer {
 
     private static final String CONTAINER_CLASS_LOADER_NAME = "com.gyf.isolate.classloader.ContainerClassLoader";
+    private static ClassLoaderService classLoaderService = ClassLoaderService.getInstance();
     public static void start(final Class clazz, final String method) {
         final String className = clazz.getCanonicalName();
         if (isContainerStart()) {
             return;
         }
+        classLoaderService.init();
         IsolatedThreadGroup threadGroup = new IsolatedThreadGroup("MatrixContainerGroup");
         Thread thread = new Thread(threadGroup,new Runnable() {
             @Override

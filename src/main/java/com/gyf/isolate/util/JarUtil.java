@@ -1,8 +1,8 @@
 package com.gyf.isolate.util;
 
-import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
@@ -19,7 +19,7 @@ import java.util.zip.ZipEntry;
 public class JarUtil {
 
     private final static String CONFIG_FILE_NAME = "config.prop";
-    private static Logger logger = Logger.getLogger(JarUtil.class);
+    private static Logger logger = LoggerFactory.getLogger(JarUtil.class);
 
     public static void main(String[] args) throws IOException {
         readExportedClassFromConfig(new File("/Users/gaoyunfan/code/graduate/target/classes/myjarservice-v2-1.0-jar-with-dependencies.jar"));

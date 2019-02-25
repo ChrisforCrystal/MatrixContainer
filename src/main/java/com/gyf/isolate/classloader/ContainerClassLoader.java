@@ -2,7 +2,8 @@ package com.gyf.isolate.classloader;
 
 import cn.hutool.core.util.StrUtil;
 import com.gyf.isolate.service.ClassLoaderService;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -12,7 +13,7 @@ import java.net.URLClassLoader;
  * @author yunfan.gyf
  **/
 public class ContainerClassLoader extends URLClassLoader {
-    private static Logger logger = Logger.getLogger(ContainerClassLoader.class);
+    private static Logger logger = LoggerFactory.getLogger(ContainerClassLoader.class);
     private ClassLoaderService classLoaderService = ClassLoaderService.getInstance();
 
     public ContainerClassLoader(URL[] urLs) throws MalformedURLException {
@@ -45,9 +46,8 @@ public class ContainerClassLoader extends URLClassLoader {
             }
             return clazz;
         }
-        logger.error("ContainerClassLoader 加载 " + name + "失败");
-        throw new ClassNotFoundException("ContainerClassLoader cannot load class " + name);
-
+        logger.warn("ContainerClassLoader 加载 " + name + "失败,使用AppClassLoader加载");
+        return ClassLoader.getSystemClassLoader().loadClass(name);
     }
 
     private Class<?> resolveLocalClass(String name) {
