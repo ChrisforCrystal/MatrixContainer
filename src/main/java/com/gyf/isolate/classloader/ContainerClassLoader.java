@@ -1,9 +1,9 @@
 package com.gyf.isolate.classloader;
 
-import com.gyf.isolate.Test;
+import cn.hutool.core.util.StrUtil;
 import com.gyf.isolate.service.ClassLoaderService;
+import org.apache.log4j.Logger;
 
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -12,47 +12,77 @@ import java.net.URLClassLoader;
  * @author yunfan.gyf
  **/
 public class ContainerClassLoader extends URLClassLoader {
-    private ClassLoaderService classLoaderService;
+    private static Logger logger = Logger.getLogger(ContainerClassLoader.class);
+    private ClassLoaderService classLoaderService = ClassLoaderService.getInstance();
 
-    public ContainerClassLoader() throws MalformedURLException {
-        super(getClassPath());
-        classLoaderService = ClassLoaderService.getInstance();
-
+    public ContainerClassLoader(URL[] urLs) throws MalformedURLException {
+        super(urLs, null);
     }
 
-    private static URL[] getClassPath() throws MalformedURLException {
-        return ((URLClassLoader) getSystemClassLoader()).getURLs();
-    }
 
     @Override
-    public Class<?> loadClass(String name) throws ClassNotFoundException {
-        return loadClass(name,false);
+    public Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
+        if (StrUtil.isEmpty(name)) {
+            return null;
+        }
+        Class<?> clazz = findLoadedClass(name);
+
+        if (clazz == null) {
+            clazz = resolveJDKClass(name);
+        }
+
+        if (clazz == null) {
+            clazz = resolveExportClass(name);
+        }
+
+        if (clazz == null) {
+            clazz = resolveLocalClass(name);
+        }
+
+        if (clazz != null) {
+            if (resolve) {
+                super.resolveClass(clazz);
+            }
+            return clazz;
+        }
+        logger.error("ContainerClassLoader 加载 " + name + "失败");
+        throw new ClassNotFoundException("ContainerClassLoader cannot load class " + name);
+
     }
 
-    @Override
-    public Class<?> loadClass(String name,boolean resolve) throws ClassNotFoundException {
-        Class clazz=null;
+    private Class<?> resolveLocalClass(String name) {
         try {
-             clazz = customLoad(name, false, this);
-        } catch (Exception e) {
+            logger.debug(this + " 加载 " + name);
+            return super.findClass(name);
+        } catch (ClassNotFoundException e) {
 
         }
-        if (clazz == null) {
+        return null;
+    }
+
+    private Class<?> resolveExportClass(String name) {
+        ClassLoader exportClassLoader = classLoaderService.findExportClassLoader(name);
+        if (exportClassLoader != null) {
             try {
-                ClassLoader system = ClassLoader.getSystemClassLoader();
-                clazz = system.loadClass(name);
-                if (clazz != null) {
-                    if (resolve) {
-                        //负责完成Class对象的链接
-                        resolveClass(clazz);
-                    }
-                    return clazz;
-                }
+                Class<?> aClass = exportClassLoader.loadClass(name);
+                logger.debug(exportClassLoader + " 加载 " + name);
+                return aClass;
             } catch (ClassNotFoundException e) {
 
             }
         }
-        return clazz;
+        return null;
+    }
+
+    private Class<?> resolveJDKClass(String name) {
+        try {
+            Class<?> aClass = classLoaderService.getJdkClassloader().loadClass(name);
+            logger.debug("JDK ClassLoader 加载 " + name);
+            return aClass;
+        } catch (ClassNotFoundException e) {
+
+        }
+        return null;
     }
 
     @Override
@@ -60,7 +90,5 @@ public class ContainerClassLoader extends URLClassLoader {
         return super.findClass(name);
     }
 
-    private Class customLoad(String name, boolean resolve, ClassLoader hcl) throws MalformedURLException, ClassNotFoundException {
-        return null;
-    }
+
 }

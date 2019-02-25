@@ -6,8 +6,6 @@ import com.gyf.isolate.util.JarUtil;
 import org.apache.log4j.Logger;
 
 import java.io.File;
-import java.io.IOException;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.List;
@@ -24,11 +22,15 @@ public class ClassLoaderService {
      */
     private volatile static ClassLoaderService classLoaderService;
 
-    private ConcurrentHashMap<String, ClassLoader> sharedClassAndClassLoaderMap = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<String, ClassLoader> exportedClassAndClassLoaderMap = new ConcurrentHashMap<>();
 
     private ClassLoader jdkClassloader;
     private ClassLoader systemClassloader;
     private BundleService bundleService;
+
+    public ClassLoader getJdkClassloader() {
+        return jdkClassloader;
+    }
 
     private ClassLoaderService() {
         bundleService = BundleService.getInstance();
@@ -40,13 +42,17 @@ public class ClassLoaderService {
         createBundleFromClassPath(((URLClassLoader) systemClassloader).getURLs());
     }
 
+    /**
+     * 创建从URL中创建bundle，并且把需要导出的类加入到map中
+     * @param urls
+     */
     private void createBundleFromClassPath(URL[] urls) {
         for (URL url : urls) {
             if (JarUtil.isJarABundle(url)) {
                 try {
                     Bundle bundle = bundleService.createBundle(new File(url.toURI()));
                     for (String exportClass : bundle.getExportClasses()) {
-                        sharedClassAndClassLoaderMap.putIfAbsent(exportClass, bundle.getClassLoader());
+                        exportedClassAndClassLoaderMap.putIfAbsent(exportClass, bundle.getClassLoader());
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -55,7 +61,7 @@ public class ClassLoaderService {
                 logger.info("创建 " + url.getPath() + " Bundle 成功");
             }
         }
-        logger.debug(" map 创建完毕 "+sharedClassAndClassLoaderMap);
+        logger.info(" map 创建完毕 "+ exportedClassAndClassLoaderMap);
     }
 
     /**
@@ -82,7 +88,7 @@ public class ClassLoaderService {
             logger.warn("加载JDK URL时出错");
         }
         jdkClassloader = new URLClassLoader(jdkUrls.toArray(new URL[0]), extClassloader);
-        logger.debug("ClassLoaderService 初始化成功");
+        logger.info("ClassLoaderService 初始化成功");
     }
 
     public static void main(String[] args) {
@@ -105,4 +111,7 @@ public class ClassLoaderService {
         return classLoaderService;
     }
 
+    public ClassLoader findExportClassLoader(String name) {
+        return exportedClassAndClassLoaderMap.get(name);
+    }
 }

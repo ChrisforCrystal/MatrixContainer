@@ -7,6 +7,7 @@ import com.gyf.thread.IsolatedThreadGroup;
 
 import java.io.File;
 import java.lang.reflect.Method;
+import java.net.URLClassLoader;
 
 /**
  * @author yunfan.gyf
@@ -25,7 +26,7 @@ public class MatrixContainer {
             @Override
             public void run() {
                 try {
-                    ContainerClassLoader cl = new ContainerClassLoader();
+                    ContainerClassLoader cl = new ContainerClassLoader(((URLClassLoader)ClassLoader.getSystemClassLoader()).getURLs());
                     Class<?> clazz = cl.loadClass(className);
                     Method startMethod = clazz.getMethod(method,String[].class);
                     startMethod.invoke(null,(Object)new String[]{});
